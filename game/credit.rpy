@@ -1,4 +1,5 @@
 label credits:
+    play music "cminor.mp3" loop
     $ renpy.block_rollback()
     $ credits_speed = 100 #scrolling speed in seconds
     scene black #replace this with a fancy background
