@@ -4,4 +4,7 @@ This game is called meteor rain and it is an original dialog-based game project.
 <br>
 ## Background story
 Once upon a time, there was an island where only teenagers could use superpowers. Based on their different characteristics each teenager would have a different power. The protagonist is a new student in the top school on the island where teenagers are trained to use their superpowers so that they can understand and realize their true thoughts. Throughout the journey, you will encounter friends and foes. The mysteries on the island are going to be revealed as the story progresses. What challenges and mysteries are ahead of you? There's only one way to find out.
-<br>Note: This game is still in development and the endings are not yet implemented in the current version.
+
+
+####Note
+This game is still in development and the endings are not yet implemented in the current version.
