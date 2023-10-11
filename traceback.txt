@@ -1,0 +1,85 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+  File "game/screens.rpy", line 715, in prepare_screen
+    screen preferences():
+  File "game/screens.rpy", line 715, in prepare
+    screen preferences():
+  File "game/screens.rpy", line 719, in prepare
+    use game_menu(_("設定"), scroll="viewport"):
+  File "game/screens.rpy", line 719, in prepare
+    use game_menu(_("設定"), scroll="viewport"):
+  File "game/screens.rpy", line 721, in prepare
+    vbox:
+  File "game/screens.rpy", line 721, in prepare
+    vbox:
+  File "game/screens.rpy", line 753, in prepare
+    hbox:
+  File "game/screens.rpy", line 753, in prepare
+    hbox:
+  File "game/screens.rpy", line 757, in prepare
+    vbox:
+  File "game/screens.rpy", line 757, in prepare
+    vbox:
+  File "game/screens.rpy", line 761, in prepare
+    bar value Preference("text speed")
+  File "game/screens.rpy", line 761, in prepare
+    bar value Preference("text speed")
+  File "renpy/common/00preferences.rpy", line 501, in Preference
+    rv = get()
+  File "renpy/common/00preferences.rpy", line 278, in get
+    return FieldValue(_preferences, "text_cps", range=bar_range * 1.0, max_is_zero=True, style="slider")
+  File "renpy/common/00barvalues.rpy", line 252, in __init__
+    if isinstance(range, float):
+TypeError: isinstance() arg 2 must be a class, type, or tuple of classes and types
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "/Applications/renpy-7.3.0-sdk/renpy/bootstrap.py", line 314, in bootstrap
+    renpy.main.main()
+  File "/Applications/renpy-7.3.0-sdk/renpy/main.py", line 529, in main
+    run(restart)
+  File "/Applications/renpy-7.3.0-sdk/renpy/main.py", line 90, in run
+    renpy.display.screen.prepare_screens()
+  File "/Applications/renpy-7.3.0-sdk/renpy/display/screen.py", line 919, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/screens.rpy", line 715, in prepare_screen
+    screen preferences():
+  File "game/screens.rpy", line 715, in prepare
+    screen preferences():
+  File "game/screens.rpy", line 719, in prepare
+    use game_menu(_("設定"), scroll="viewport"):
+  File "game/screens.rpy", line 719, in prepare
+    use game_menu(_("設定"), scroll="viewport"):
+  File "game/screens.rpy", line 721, in prepare
+    vbox:
+  File "game/screens.rpy", line 721, in prepare
+    vbox:
+  File "game/screens.rpy", line 753, in prepare
+    hbox:
+  File "game/screens.rpy", line 753, in prepare
+    hbox:
+  File "game/screens.rpy", line 757, in prepare
+    vbox:
+  File "game/screens.rpy", line 757, in prepare
+    vbox:
+  File "game/screens.rpy", line 761, in prepare
+    bar value Preference("text speed")
+  File "game/screens.rpy", line 761, in prepare
+    bar value Preference("text speed")
+  File "/Applications/renpy-7.3.0-sdk/renpy/python.py", line 1983, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<screen language>", line 761, in <module>
+  File "renpy/common/00preferences.rpy", line 501, in Preference
+    rv = get()
+  File "renpy/common/00preferences.rpy", line 278, in get
+    return FieldValue(_preferences, "text_cps", range=bar_range * 1.0, max_is_zero=True, style="slider")
+  File "renpy/common/00barvalues.rpy", line 252, in __init__
+    if isinstance(range, float):
+TypeError: isinstance() arg 2 must be a class, type, or tuple of classes and types
+
+Darwin-17.7.0-x86_64-i386-64bit
+Ren'Py 7.3.0.271
+Meteor rain 1 1.0
+Tue Jul  6 21:55:37 2021

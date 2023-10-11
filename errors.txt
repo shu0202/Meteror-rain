@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/ch2.rpy", line 1522: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    linear 0.2 xoffet 0
+                       ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Thu Sep 29 17:01:40 2022
