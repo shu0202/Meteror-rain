@@ -10,4 +10,4 @@ Once upon a time, there was an island where only teenagers could use superpowers
 This game is still in development and the endings are not yet implemented in the current version.
 
 ### Link to functionality showcase and teaser
-[Link]([https://www.renpy.org/](https://youtu.be/9WKQRLkpwcg)https://youtu.be/9WKQRLkpwcg).
+[Link](https://youtu.be/9WKQRLkpwcg).
