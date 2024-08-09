@@ -18,6 +18,74 @@ init python :
 
 define cutin = CropMove(0.15, "wiperight")
 
+#define wipe_normal = ImageDissolve("normal_wipe", 0.5) #custom soft-edge wipe
+define wipe_normal = ImageDissolve("test_wipe_1", 0.3) #custom soft-edge wipe 2 for right to left
+#define default way of showing a character
+transform enter_from_right_hide:
+    xoffset 50
+transform enter_from_left_hide:
+    xoffset -50
+transform exit_left:
+    linear 0.2 xoffset -50 alpha 0.0
+transform exit_right:
+    linear 0.2 xoffset 50 alpha 0.0
+transform exit_none:
+    linear 0.2 alpha 0.0
+transform transparent:
+    alpha 0.0
+transform seen:
+    linear 0.2 alpha 1.0 xoffset 0.0
+transform showoffset:
+    yoffset 100
+
+transform alignx(value):
+    xalign value
+
+transform hikari_shock_offset:
+    yoffset -880
+    xoffset -10
+
+init python:
+    def show_default(character_name, xalign_num, enter):
+        renpy.show(character_name)   
+        renpy.show(character_name,at_list=[showoffset])
+        renpy.show(character_name,at_list=[alignx(xalign_num)])
+        renpy.show(character_name,at_list=[transparent])
+        if enter == "L":
+            renpy.show(character_name,at_list=[enter_from_left_hide])
+        elif enter == "R":
+            renpy.show(character_name,at_list=[enter_from_right_hide])
+        renpy.show(character_name,at_list=[seen])
+    def hide_default(character_name, exit_dir):
+        if exit_dir == "L":
+            renpy.show(character_name,at_list=[exit_left])
+        elif exit_dir == "R":
+            renpy.show(character_name,at_list=[exit_right])
+        else:
+            renpy.show(character_name,at_list=[exit_none])
+    def show_shock(character):
+        renpy.show("shock_animation",zorder=10)
+        if character == "hk":
+            renpy.show("shock_animation",at_list=[hikari_shock_offset])
+
+transform VHS:
+    shader "MakeVisualNovels.VHS"
+    #Color applies a shift in color.
+    #Remember R G B A.  Values are expressed between 0.0 and 1.0
+    #See the bottom  of this document for a cheat sheet.
+    #Use White vec4(1.0, 1.0, 1.0, 1.0) to disable this effect.
+    #Pure black turns the entire image black.
+    #u_color (0.5, 0.5, 0.5, 1.0)
+    u_color (0.52, 0.39, 0.28, 1.0)
+
+image shock_animation:
+    "shock_effect"
+    pause 0.3
+    "shock_effect_1"
+    pause 0.3
+    repeat    
+        
+
 image speed:
     "comic speed1"
     pause 0.1
@@ -89,7 +157,6 @@ define hk_pts = 0
 define s_pts = 0
 define h_pts = 0
 
-image JCAD1 = "JCAD_f.png"
 define h = Character('遙', color="#FFFFFF")
 define k = Character('界', color="#FFFFFF")
 define t = Character('司', color="#FFFFFF")
@@ -97,12 +164,6 @@ define kz = Character('和', color="#FFFFFF")
 define hk = Character('光', color="#FFFFFF")
 define s = Character('幸', color="#FFFFFF")
 
-image JCAD = "JCAD_s.png"
-image JCAD2 = "JCAD2.png"
-image Schoolco = "School corridor.png"
-image inschool = "IS.png"
-image chome = "kiyoto room 1.png"
-image rts = "Road to school.png"
 # 遊戲從這裡開始。
 label start:
     stop music fadeout 1.0
@@ -110,7 +171,7 @@ label start:
     with dissolve
     "有誰會想到命運會突然改變，令我在一瞬之間失去所有？{p}看似平凡的一天，其實並不是必然。"
     "我記得，那一天是我們一家人去海灘的日子。"
-    show childhood1
+    show childhood1 at VHS
     with dissolve
     "爸爸媽媽在車頭駕著車，而我和妹妹就在後排並肩而坐。"
     "窗外的景色全是沿着山路便能看見的樹與海景。"
@@ -122,6 +183,7 @@ label start:
     "不過，就這樣呆坐著有什麼好處呢？"
     "這種時候，當然要玩一下我們小學生的玩意了。"
     "想到這邊，我馬上轉身，目光尋找著妹妹的身影。"
+    show childhood2_1 at VHS
     show childhood2_1:
         yoffset -75
     with dissolve
@@ -164,23 +226,26 @@ label start:
     show black
     "突然，我們的車受到巨大的震盪。我們遇上了車禍。"
     "「遙！！！」"
+    show childhood3_1 at VHS
     show childhood3_1 :
         linear 5.0 xoffset -780
     with eye_open
     "睜開眼的時候，便發現自己已身處於綠色草叢中。{p}\ \ \ 鼻子嗅到了，是刺鼻的機油味。"
     "在眼前，我只能看到頭破血流的妹妹，還有壓在她之上的汽車殘骸。"
-    show childhood3
+    show childhood3 at VHS
     with dissolve
     hide childhood3_1
     k "「遙...你等我。{w}很快來救妳......」"
     "遙也正向我伸出手，儘管身上佈滿血跡。"
     h "「哥哥...」"
     play sound "heartbeat.mp3"
+    show childhood3_2 at VHS
     show childhood3_2 :
         linear 1.0 alpha 0.0 truecenter zoom 1.25
     "我無論如何也要救她。"
     "即使只能止血也好，我怎麼會讓遙在我面前死去？"
     "「遙......我很快...」"
+    show childhood3_3 at VHS
     show childhood3_3 :
         alpha 0.0
         linear 2.0 alpha 1.0
@@ -189,7 +254,7 @@ label start:
     hide childhood3_3
     with eye_shut
     hide childhood3_2
-    show childhood3_3
+    show childhood3_3 at VHS
     show eye1
     show end:
         alpha 1.0
@@ -712,7 +777,13 @@ label start:
     hide classroom
     with dissolve
     show island:
-        linear 20 truecenter zoom 1.25
+        subpixel True
+        parallel:
+            linear 20 zoom 1.25
+        parallel:
+            linear 20 xalign 0.5
+        parallel:
+            linear 20 yalign 0.5
     with dissolve
     "2001年，東亞的這個城市突然出現一個結界。{p}所有能力只能在這個結界中使用。{p}年青人因為他們有一定自我意識、與身體機能健全，{p}而且又未受社會影響，所以能發揮出最大效用的超能力。"
     show machi

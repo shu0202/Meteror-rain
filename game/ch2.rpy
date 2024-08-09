@@ -44,6 +44,7 @@ label ch2:
     hide haruka_n
     k "「我、我也是有進步的喔！{p}\ \ \ 你看，今天我們不是早到學校了嘛？ 我也是有努力起床的喔！」"
     t "「好的好的，真厲害呢！」"
+    h "「做得好！」"
     "大家在一番嘲諷過後，便同時忍不住聲音大笑了出來。"
     show haruka_l:
         linear 0.2 alpha 0.0
@@ -1358,6 +1359,7 @@ label ch2_1:
     # cg?
     k "「左邊！！左邊有敵人！！」"
     hide haruka_l
+    hide sachi_n
     show tsukasa
     show tsukasa:
         alpha 0.0
@@ -1420,7 +1422,7 @@ label ch2_1:
     k "「今天是週末、是自由時間喔...」"
     show haruka_l:
         linear 0.2 alpha 0.0
-    show tsukaa:
+    show tsukasa:
         linear 0.2 alpha 0.0
     #Q版cg
     #show qcg2
@@ -1533,8 +1535,699 @@ label ch2_1:
     pause 0.2
     hide cwb_timesquare
     with dissolve
-    #show cwb_uniqlo
+    hide haruka_l
+    hide hikari_l1
+    hide tsukasa
+    show cwb_uniqlo:
+        xoffset -50
+    with dissolve
+    show tsukasa
+    show tsukasa:
+        alpha 0.0
+    show tsukasa:
+        linear 0.2 alpha 1.0
+    t "「喔喔，多久沒來這裡了 ? 裝潢變得漂亮了呢！」"
+    k "「的確呢..."
+    extend "平時我們那麼少來買衣服。」"
+    show tsukasa:
+        linear 0.2 xoffset -50 alpha 0.0
+    show cwb_uniqlo:
+        linear 0.2 xoffset -100
+    show hikari_l2
+    show hikari_l2:
+        alpha 0.0
+        xoffset 50
+    show hikari_l2:
+        linear 0.2 alpha 1.0 xoffset 0
+    hk "「你看看這個!是那部 Season of Horoscope 的合作T喔！"
+    show hikari_t2_s
+    show hikari_t2_s:
+        alpha 0.0
+    show hikari_t2_s:
+        linear 0.2 alpha 1.0
+    extend "\n\ \ \ 買哪件好呢 ?"
+    hide hikari_l2
+    show hikari_l2_s
+    show hikari_l2_s:
+        alpha 0.0
+    show hikari_l2_s:
+        linear 0.2 alpha 1.0
+    extend " 要不全都買吧！」"
+    hide hikari_t2_s 
+    show hikari_l2_s:
+        linear 0.2 xoffset 50 alpha 0.0
+    show cwb_uniqlo:
+        linear 0.2 xoffset 0
+    show sachi_t
+    show sachi_t:
+        alpha 0.0
+        xoffset -50
+    show sachi_t:
+        linear 0.2 alpha 1.0 xoffset 0
+    s "「......這件連衣裙——"
+    hide hikari_l2_s
+    show sachi_n
+    show sachi_n:
+        alpha 0.0
+    show sachi_n:
+        linear 0.2 alpha 1.0
+    extend "不行，現在在辦正經事。」"
+    hide sachi_t
+    show sachi_n:
+        linear 0.2 xalign 0.2
+    show haruka_e5
+    show haruka_e5:
+        xalign 0.8
+    show haruka_e5:
+        alpha 0.0
+        xoffset 50
+    show haruka_e5:
+        linear 0.2 xoffset 0 alpha 1.0
+    h "「啊~ 這件連衣裙好可愛喔。"
+    show haruka_l
+    show haruka_l:
+        xalign 0.8
+    show haruka_l:
+        alpha 0.0
+    show haruka_l:
+        linear 0.2 alpha 1.0
+    extend "幸，你也喜歡這種的嗎?」"
+    hide haruka_e5
+    #tag: emotion missing
+    #thinking with a little bit embarassed then return back to normal
+    s "「嘛... "
+    extend "我還是有留意這季的新款式的...」"
+    show haruka_e5
+    show haruka_e5:
+        xalign 0.8
+    show haruka_e5:
+        alpha 0.0
+    show haruka_e5:
+        linear 0.2 alpha 1.0
+    h "「哇，這件外套也很漂亮喔！很像Fong姐上次演唱會穿的那件！"
+    hide haruka_l
+    show haruka_e2b
+    show haruka_e2b:
+        xalign 0.8
+    show haruka_e2b:
+        alpha 0.0
+    show haruka_e2b:
+        linear 0.2 alpha 1.0
+    extend "\n\ \ \ 啊... 不過這麽華麗的衣服要怎麼穿出街呀... "
+    hide haruka_e5
+    show haruka_ysd_t
+    show haruka_ysd_t:
+        xalign 0.8
+    show haruka_ysd_t:
+        alpha 0.0
+    show haruka_ysd_t:
+        linear 0.2 alpha 1.0
+    extend "嗚......」"
+    hide haruka_e2b
+    show cwb_uniqlo:
+        linear 0.2 xoffset -50
+    show haruka_ysd_t:
+        linear 0.2 xoffset -50 alpha 0.0
+    show sachi_n:
+        linear 0.2 xoffset -50 alpha 0.0
+    show tsukasa
+    show tsukasa:
+        alpha 0.0
+        xoffset 50
+    show tsukasa:
+        linear 0.2 xoffset 0 alpha 1.0
+    t "「真是有意思。」"
+    hide haruka_ysd_t
+    hide sachi_n
+    k "「什麼有意思呀?」"
+    t "「你看看這個 —— 是新款的運動衣!"
+    extend "\n\ \ \ 看他這麽薄，在冬天竟然還有意志力保暖功能!"
+    extend "\n\ \ \ 這樣冬天練功就更輕鬆了!」"
+    k "「哈啊... 又是練功的事嗎...」"
+    t "「你沒興趣看這些嗎?」"
+    k "「嗯..."
+    extend " 我衣服基本上也足夠... "
+    extend "而且基本上也是遙幫我挑的。」"
+    t "「你這男人真沒用，都19歲還要妹妹幫你挑衣服嗎?」"
+    k "「呃哈哈... 那我這次自己挑吧。」"
+    show tsukasa:
+        linear 0.2 alpha 0.0
+    show haruka_big_lb
+    show haruka_big_lb:
+        alpha 0.0
+    show haruka_big_lb:
+        linear 0.2 alpha 1.0
+    h "「好呀。就這樣吧!」"
+    show haruka_big_lb:
+        linear 0.2 xalign 0.2
+    show hikari_big_p1
+    show hikari_big_p1:
+        xalign 1.0
+    show hikari_big_p1:
+        alpha 0.0
+        xoffset 200
+    show hikari_big_p1:
+        linear 0.2 xoffset 150 alpha 1.0
+    hk "「嗯！好主意！」"
+    hide tsukasa
+    camera:
+        linear 0.05 xoffset 50
+        linear 0.05 xoffset -50
+        linear 0.05 xoffset 50
+        linear 0.05 xoffset 0
+    camera
+    k "「哇，你們什麼時候在這裡的?」"
+    show haruka_big_lb:
+        linear 0.2 alpha 0.0
+    show hikari_big_p1:
+        linear 0.2 alpha 0.0
+    show haruka_lb
+    show haruka_lb:
+        alpha 0.0
+    show haruka_lb:
+        xalign 0.2
+    show haruka_lb:
+        linear 0.2 alpha 1.0
+    show hikari_p1
+    show hikari_p1:
+        alpha 0.0
+    show hikari_p1:
+        xalign 0.5
+    show hikari_p1:
+        linear 0.2 alpha 1.0
+    show sachi_n
+    show sachi_n:
+        xalign 0.9
+    show sachi_n:
+        xoffset 50
+        alpha 0.0
+    show sachi_n:
+        linear 0.2 xoffset 0 alpha 1.0
+    #tag: missing emotion
+    s "「剛剛看完自己喜歡的，打算來看看你們..."
+    hide haruka_big_lb
+    hide hikari_big_p1
+    extend "\n\ \ \ 嘛... 我是不會對誰幫你選衣服有偏見啦...」"
+    k "「啊啊啊啊啊啊別再說!!」"
+    "這次，我向遙提出了以後自己選衣服的決定。"
+    $show_default("haruka_55_e",0.2, "M")
+    h "「那麼作為證明，就必須考考你的眼光了。」"
+    hide haruka_lb
+    k "「呃 ? 怎麼考...」"
+    $hide_default("haruka_55_e","M")
+    $hide_default("hikari_p1","M")
+    $hide_default("sachi_n","M")
+    pause 0.2
+    hide cwb_uniqlo
+    with dissolve
+    hide haruka_e3
+    hide hikari_p1
+    hide sachi_n
+    #tag: missing background
+    show cwb_uniqlo_change
+    with dissolve
+    $renpy.show("hikari_35_l")
+    $renpy.show("hikari_35_l",at_list=[alignx(0.2)])
+    $renpy.show("hikari_35_l",at_list=[showoffset])
+    $renpy.show("hikari_35_l",at_list=[transparent])
+    $renpy.show("hikari_35_l",at_list=[seen])
+    $show_default("sachi_3_n",0.8,"M")
+    pause 0.2
+    transform jumping:
+        linear 0.05 yoffset 50
+        linear 0.05 yoffset 100
+        linear 0.05 yoffset 50
+        linear 0.05 yoffset 100
+    $renpy.show("hikari_35_l",at_list=[jumping])
+    pause 0.2
+    show hikari_12_l
+    show hikari_12_l:
+        alpha 0.0
+        xalign 0.2
+    show hikari_12_l:
+        xoffset -75
+        yoffset 100
+    show hikari_12_l:
+        linear 0.1 alpha 1.0
+    pause 0.1
+    hide hikari_35_l
+    hk "「看看我穿這件吧~ 等一下，我很快去換~~」"
+    $hide_default("hikari_12_l","R")
+    #tag: missing emotion
+    $show_default("sachi_1_t",0.8,"M")
+    s "「不，痛T怎麼穿都一樣吧...」"
+    hide sachi_3_n
+    hide hikari_12_l
+    hk "「才不是痛T呢!是合作商品!!」"
+    hk "「嘿，嗯。完美!"
+    #tag: missing sprite hikari_shifuku
+    extend " 怎麼樣!好看吧!! {p}\ \ \ 畢竟是我這種特殊能力者，穿起來的氣質也是與別不同!」"
+    $show_default("tsukasa",0.1,"L")
+    show sachi_1_t:
+        linear 0.2 xalign 0.9
+    t "「喔喔!挺好看的欸... 不愧是潮童!」"
+    k "「好看，很適合你呀。」"
+    "潮童... 的確這身打扮會讓人聯想到這個詞語，卻沒有一點貶義在其中。{p}這件T恤配上熱褲，更加凸顯了光自由自在的個性。{p}就連頭上這頂帽子也襯托出了那種輕便、爽快的衣著風格。"
+    hk "「嘿嘿~ 對吧對吧?」"
+    #tag: missing emotion sachi_timid
+    s "「那... 那可以請你幫我看看這款連身裙適合我嗎? 我沒有很大自信...」"
+    show tsukasa:
+        linear 0.1 yoffset 150
+        linear 0.1 yoffset 100
+    t "「沒關係，交給我們吧!」(大拇指)"
+    $hide_default("sachi_1_t","R")
+    s "「......嗯，可以了。"
+    hide sachi_1_t
+    #tag: missing sachi_shifuku
+    extend "這樣... 還可以嗎...?」"
+    k "「喔喔，好看。很合身呢。」"
+    "這樣一看，幸的確有一種優雅氣質被這連身裙帶了出來。{p}雖然連身裙給人一種舒適寫意的感覺，{p}但幸那種稍微成熟的魅力把兩個風格混和得很好，令人不禁停下來細心欣賞。"
+    "穿著這件連身裙，就能感覺到她平時做事有多麼細心。"
+    t "「嗯，拿出自信來吧！幸姐！」"
+    s "幸「那就好了。"
+    extend "這件就買下來吧。」(微笑)"
+    #hide sachi_shifuku 幸退場
+    show tsukasa:
+        linear 0.2 xalign 0.5
+    "這樣就兩位，還剩一位。"
+    "嗯，好期待呀。"
+    t "「盯~~~」"
+    k "「啊哈哈哈...」"
+    show tsukasa:
+        linear 0.2 xalign 0.8
+    $show_default("haruka_54_e",0.2,"L")
+    h "「看什麼啦，就那麼喜歡看人家試穿嗎...」"
+    k "「沒有啊，因為是遙，所以會很期待。」"
+    show tsukasa:
+        linear 0.1 yoffset 150
+        linear 0.1 yoffset 100
+    t "「嗯！遙最讚啦！」"
+    $show_default("haruka_113_su",0.2,"M")
+    h "「什麼?! "
+    hide haruka_54_e
+    $show_default("haruka_272_s",0.2,"M")
+    extend "不敢相信，你們居然這麼敢說喔......」"
+    hide haruka_113_su
+    t "「難道遙沒有看中的衣服嗎？？」"
+    show tsukasa:
+        linear 0.2 xalign 0.9
+    show haruka_272_s:
+        linear 0.2 xalign 0.5
+    show haruka_272_s zorder 10
+    $show_default("hikari_90_l",0.05,"L")
+    hk "「難道你不想哥哥對衣服的眼光有所進步嗎~？？」"
+    $show_default("haruka_293_a",0.5,"M")
+    show haruka_293_a zorder 11
+    h "「啊啊啊，好啦，我也進去換就是了!」"
+    hide haruka_272_s
+    $hide_default("hikari_90_l","M")
+    $hide_default("tsukasa","M")
+    $hide_default("haruka_293_a","M")
+    hide cwb_uniqlo_change
+    with dissolve
+    "過了五分鐘..."
+    hide haruka_293_a
+    hide hikari_90_l
+    hide tsukasa
+    show cwb_uniqlo_change
+    with dissolve
+    $show_default("hikari_1_n",0.1,"M")
+    $show_default("sachi_1_t",0.9,"M")
+    pause 0.2
+    $show_default("sachi_3_n",0.9,"M")
+    s "「遙？你沒事嗎？」"
+    hide sachi_1_t
+    h "「呃...沒事......{w}就是有點害羞」"
+    $show_default("hikari_267_t",0.1,"M")
+    pause 0.2
+    hide hikari_1_n
+    hk "「有什麼好害羞的呢？！來吧！」"
+    show hikari_267_t:
+        linear 0.05 xalign 0.03
+        pause 0.05
+        linear 0.2 xalign 0.5
+        pause 0.1
+        linear 0.2 xalign 0.1
+    $ renpy.pause(0.4, hard=True)
+    $show_default("haruka",0.5,"R") #tag: for testing purpose need change to haruka_shifuku
+    pause 0.1
+    $show_default("hikari_53_l",0.1,"M")
+    $show_default("sachi_2_s",0.9,"M") #tag: missing emotion
+    "{color=#FFFFFF}眾人{/color}" "「喔、喔喔喔!」"
+    hide hikari_267_t
+    hide sachi_3_n
+    hide haruka #tag: delete later after sprite is ready
+    h "「怎樣... 適合嗎?」"
+    $hide_default("hikari_53_l","M")
+    $hide_default("sachi_2_s","M") #tag: missing emotion
+    pause 0.2
+    $show_default("tsukasa",0.5,"M")
+    t "「果然遙真是最讚了!」" 
+    #tag: missing emotion
+    $hide_default("tsukasa","M")
+    pause 0.2
+    $show_default("sachi_2_s",0.9,"M")
+    $show_default("hikari_53_l",0.1,"M")
+    s "「嗯，非常好看喔。」"
+    hide tsukasa
+    $show_default("hikari_449_e",0.1,"M")
+    hk "「哇，真羨慕呢~"
+    hide hikari_53_l
+    $show_default("hikari_39_l",0.1,"M")
+    extend " 果然反差萌太可愛啦!!」"
+    hide hikari_449_e
+    $hide_default("hikari_39_l","M")
+    $hide_default("sachi_2_s","M")
+    "這件毛衣陪上格子裙實在太可愛了。"
+    hide hikari_39_l
+    hide sachi_2_s
+    "看起來有點青春活潑的感覺，但回想起遙的務實態度，又能起一種中和的作用。{p}真是太好了，遙能找到這麼適合她的衣服。"
+    k "「嗯，很好看喔。看起來很成熟呢。」"
+    k "「遙很久沒買新衣服了吧？{w}不如這次就買下來吧。」"
+    #tag: missing sprite haruka_shifuku
+    h "「嗯，好吧... "
+    extend "既然哥哥也這樣說。那就哥哥陪我一起付錢吧。"
+    extend "嘿嘿~」"
+    "遙湊了過來，繞著我的手臂，然後把我拖到了收銀台。"
+    hide cwb_uniqlo_change
+    with dissolve
+    pause 0.2
+    #show cwb_till #tag: missing background
+    #with dissolve #tag: missing background
+    show cwb_uniqlo_change
+    with dissolve
+    $show_default("haruka_141_l",0.5,"M")
+    "{color=#FFFFFF}店員{/color}" "「哎呀，真是相親相愛呢~ 來陪女朋友買衣服嗎?」"
+    $show_default("haruka_94_e",0.5,"M")
+    h "「(欸!?)」"
+    hide haruka_141_l
+    "遙的用驚恐的眼神看了過來..."
+    "我該怎麼辦呀..."
+    "不過她也是的，追星時還要現在也是，異常高興的遙總會做些不可理喻的事情。"
+    menu :
+        "順勢承認" :
+            jump ch2_agree
+        "堅決否認" :
+            jump ch2_disagree
+        "含糊帶過" :
+            jump ch2_subjective
+
+label ch2_agree:
+    $h_pts = h_pts + 1
+    #"[h_pts] [hk_pts] [s_pts]"
+    k "「對！她就是我女朋友！」"
+    "{color=#FFFFFF}店員{/color}" "「噢~ 果然我的眼光很準，你們很匹配喔！有夫妻相！」"
+    "「是嗎哈哈哈哈哈」"
+    $show_default("haruka_182_y",0.5,"M")
+    "遙更加抱緊界的手臂"
+    hide haruka_94_e
+    $show_default("haruka_137_l",0.5,"M")
+    h "「哥哥... 謝謝你幫我解圍。」"
+    hide haruka_182_y
+    jump ch2_2
+
+label ch2_disagree:
+    k "「沒有，我們跟同學一起逛街而已。」"
+    "{color=#FFFFFF}店員{/color}" "「喔呵？哼哼~~ {w}好吧，那麼玩得開心點喔~」"
+    k "「欸...好的!」"
+    $show_default("haruka_137_l",0.5,"M")
+    h "「哥哥... 謝謝你幫我解圍。」"
+    hide haruka_94_e
+    jump ch2_2
+
+label ch2_subjective:
+    k "「呃哈哈... 不好意思我們有點趕時間...」"
+    "{color=#FFFFFF}店員{/color}" "「啊，抱歉了。那麼謝謝惠顧。」"
+    $show_default("haruka_137_l",0.5,"M")
+    h "「哥哥... 謝謝你幫我解圍。」"
+    hide haruka_94_e
+    jump ch2_2
+
+label ch2_2:
+    k "「別在意啦，我們回大隊去吧。」"
+    $hide_default("haruka_137_l","M")
+    hide cwb_uniqlo_change
+    with dissolve
+    #hide cwb_till #tag: missing background
+    #with dissolve #tag: missing background
+    pause 0.2
+    show cwb_backstreet
+    with dissolve
+    "各自在櫃檯付了錢後，我們便繼續逛著銅鑼灣的街道。"
+    "在琳瑯滿目的櫥窗便四處遊走，感覺是有點眼花撩亂。{p}不過女生倒是看得很高興。"
+    "到底我們什麼時候才能回家呢...？{p}心裏思念著今早玩過的遊戲，我一邊這麼祈求著。"
+    #show qcg3 #tag: missing cg
     #with dissolve
+    s "「啊，找到了。{p}\ \ \ 就是這個。」"
+    hide cwb_backstreet
+    "幸突然停下腳步，盯著櫥窗裡面一個商品。"
+    s "「是這個了。」"
+    k "「喔?這個是...」"
+    "櫥窗裏的是一個掛頭式耳機。"
+    h "「幸也喜歡聽音樂的嗎？你喜歡那個歌手呀？」"
+    s "「欸？...啊，不是，我純粹喜歡聽純音樂。」"
+    h "「這個耳機~ 也不算太貴，你要買嗎？」"
+    s "「嗯...嗯。」"
+    t "「那麼我們進店裡去吧。」"
+    #hide qcg3 #tag: missing cg
+    #with dissolve
+    show cwb_logon #tag: missing bg
+    with dissolve
+    $show_default("haruka_1_n",0.2,"M")
+    $show_default("tsukasa",0.8,"M")
+    t "「這間雜貨店是什麼呀?居然連腹肌按摩器也有得賣!?」"
+    k "「什麼!?這邊竟然有絕版的遊戲——志恆的大冒險??」"
+    $show_default("haruka_314_a",0.2,"M")
+    h "「呵呵，一開始是誰說不想出來的呀？」"
+    hide haruka_1_n
+    "{color=#FFFFFF}司&界{/color}""「是誰？誰說了？？給我出來!」"
+    $hide_default("haruka_314_a","L")
+    $hide_default("tsukasa","L")
+    show cwb_logon:
+        linear 0.2 xoffset -50
+    $show_default("sachi_3_n",0.5,"R")
+    "在店的角落，幸自己一個在看著耳機，還有旁邊的——女僕裝？"
+    hide haruka_314_
+    hide tsukasa
+    k "「幸，你喜歡這種的嗎？」"
+    #tag: missing emotion
+    s "「呃...呃！不是不是。」"
+    k "「那為什麼會在看這些呀？」"
+    #tag: missing emotion
+    s "「只是...有點懷念而已。」"
+    "低著頭，幸露出了溫暖的笑容。 "
+    "的確，這樣子的幸也挺有魅力。"
+    k "「是以前的班級嗎？」"
+    #tag: missing emotion
+    s "「文化祭很好玩的。那時候跟同學辦冰室，很難忘。」"
+    k "「這樣嗎...今年也要辦吧？{p}\ \ \ 你想辦什麼呢？」"
+    #tag: missing emotion
+    s "「不知道。」"
+    k "「到時一起提議辦冰室吧！」"
+    #tag: missing emotion
+    s "「...欸？真的嗎？」"
+    "既然能令幸高興，想必大家也會贊成吧。"
+    k "「嗯。大家也會很高興的。」"
+    #tag: missing emotion
+    s "「嗯。"
+    extend "謝謝你。」"
+    $hide_default("sachi_3_n","M")
+    $show_default("hikari_41_l",0.5,"M")
+    pause 0.2
+    $renpy.show("hikari_41_l",at_list=[jumping])
+    pause 0.2
+    show hikari_26_l
+    show hikari_26_l:
+        xalign 0.5
+        alpha 0.0
+    show hikari_26_l:
+        xoffset -23
+        yoffset 100
+    show hikari_26_l:
+        linear 0.1 alpha 1.0
+    $ renpy.pause(0.1, hard=True)
+    hide hikari_41_l
+    hk "「喂！界！！你沒東西要買的話，我們先排隊付錢咯~」"
+    k "「你...在店內小聲點說話啦。」"
+    $show_default("hikari_215_p",0.5,"M")
+    $ renpy.pause(0.2, hard=True)
+    show hikari_26_l:
+        linear 0.1 alpha 0.0
+    hk "「額...對不起。嘿嘿。」"
+    hide hikari_26_l
+    show cwb_logon:
+        linear 0.2 xoffset 0
+    $hide_default("hikari_215_p","R")
+    k "「等等，這套志恆的大冒險居然有特價？」"
+    show chihanggame:
+        xalign 0.5
+        yalign 0.5
+    with dissolve
+    "那麼我今天也買這套遊戲回去玩一下吧。"
+    "嗯，黑髮的女主角好像挺可愛的。"
+    "回去後一定先要攻略她。"
+    hide chihanggame
+    with dissolve
+    show cwb_logon:
+        linear 0.2 xoffset -50
+    $show_default("tsukasa",0.2,"R")
+    $show_default("sachi_1_t",0.8,"R")
+    t "「吶，幸~ 可以幫我個忙嗎？」"
+    #tag: missing emotion
+    s "「什麼...？」"
+    t "「就是那個...你的能力~~"
+    extend "\n\ \ \ 可以幫我複製一個嗎?」"
+    #tag: missing emotion
+    s "「那麼想練肌肉的話自己買不就好了。{w}我可不願做小偷。」"
+    t "「嗚嗚... 好吧... 這個月不能買遊戲了。 」"
+    $hide_default("sachi_1_t","R")
+    show tsukasa:
+        linear 0.2 xalign 0.5
+    t "「不過！界，你會借給我玩的吧！！」"
+    hide sachi_1_t
+    k "「自己不買就借我的？！」"
+    t "「我們都是死黨了，對不？」"
+    k "「呃，這種時候才認死黨嗎...」"
+    t "「說什麼呢~ 一直都是啦好不好~ 界真愛開玩笑！」"
+    k "「你來我家玩吧。可不要借給你呢。」"
+    t "「也可以！」"
+    show tsukasa:
+        linear 0.2 xalign 0.2
+    $show_default("haruka_162_l",0.8,"R")
+    h "「說起來，距離黃昏還有些時間。我們等下要去哪兒呀？」"
+    t "「要去打卡嗎！我知道附近有電車可以去一個打卡地點喔！」"
+    $hide_default("tsukasa","L")
+    $hide_default("haruka_162_l","L")
+    $show_default("hikari_42_l",0.5,"M")
+    hk "「吾之僕人，立下功勞了。帶吾等前往那約定之地吧！」"
+    hide tsukasa
+    hide haruka_162_l
+    $hide_default("hikari_42_l","L")
+    "踏上電車的我們，朝著西環貨櫃碼頭出發。" 
+    hide hikari_42_l
+    hide cwb_logon
+    with dissolve
+    #tag: missing bg
+    #show tram_cwb
+    #pause 1.0
+    #show tram_ktown
+    #pause 1.0
+    show igpier_1
+    with dissolve
+    $show_default("hikari_95_l",0.5,"M")
+    hk "「喔喔喔！這個景色真不錯嘛！"
+    $show_default("hikari_85_l", 0.5,"M")
+    $show_shock("hk")
+    extend "\n\ \ \ 以後這就是吾的據點了！以後在這裡建造聖城吧！」"
+    hide hikari_95_l
+    $hide_default("shock_animation","M")
+    show hikari_85_l:
+        linear 0.2 xalign 0.2
+    $show_default("tsukasa",0.8,"M")
+    t "「啊，這個pose挺好，就這樣站著~"
+    #(喀擦)
+    #tag: missing sound effect camera
+    extend "好，再來一張portrait！"
+    #(喀擦)
+    #tag: missing sound effect camera
+    extend "好了！」" 
+    "真的像專業攝影師呀... 說不定司會是絕世好男友？"
+    show hikari_78_l
+    show hikari_78_l:
+        xalign 0.2
+        alpha 0.0
+    show hikari_78_l:
+        xoffset -75
+        yoffset 100
+    show hikari_78_l:
+        linear 0.2 alpha 1.0
+    $ renpy.pause(0.2, hard=True)
+    show hikari_85_l:
+        linear 0.2 alpha 0.0
+    hk "「哇哈哈哈哈！」"
+    hide hikari_85_l
+    "海風吹過，讓光的披風擺動了起來。"
+    "瞬間司的電話響起了一連串連拍聲。"
+    #tag: missing sound effect explosion
+    #——爆!
+    camera:
+        linear 0.05 xoffset 50
+        linear 0.05 xoffset -50
+        linear 0.05 xoffset 50
+        linear 0.05 xoffset -50
+        linear 0.1 xoffset 0
+    pause 0.3
+    "剛才那爆炸聲真是真實呢。"
+    $hide_default("hikari_78_l","M")
+    show tsukasa:
+        linear 0.2 xalign 0.5
+    k "「司，你什麼時候連爆炸效果都準備好了？」"
+    hide hikari_78_l
+    t "「...界。{w}那不是我啊。」"
+    s "「看那邊。」"
+    $hide_default("tsukasa","M")
+    show tent
+    with dissolve
+    show speed zorder 100 :
+        alpha 0.5
+    #tag: missing effect electric aura, like the ones in dragon ball
+    "遠處的帳篷內，隱約能看見兩個正在打鬥的人影。"
+    hide igpier_1
+    "還有他們的技能有如電光石火般，強而有力。"
+    "正確來說，是一方設下陷阱，然後另一方不停地閃避、或者抵擋攻擊。"
+    "我們走近帳篷，確認一下對方的身分。"
+    #tag: missing sprite white tiger
+    #tag: missing sprite blue dragon
+    s "「什...」"
+    t "「啊！那不是『白虎』跟『青龍』學生會會長嗎？！」"
+    "開著『觀測』技能的司在一旁這麽說著。\n只見他一臉驚訝，目不轉睛地看他們的數值。"
+    "『白虎』...『青龍』...？"
+    "在貨櫃碼頭的柏油路上，冒出了兩團澎拜的氣場。"
+    "穿著白西裝的男子散發紫色的意志力，而黑風衣的男子則是綠色的意志力氣場。{p}他們各自散發的意志力，都可以蓋過我們小隊全力的氣場。"
+    transform shake:
+        linear 0.05 xoffset 5
+        linear 0.05 xoffset -5
+        repeat
+    show tent at shake
+    "然而氣場並沒有就此停止，反而擴大至旁邊的路燈和貨櫃。"
+    "浪潮湧起，海鷗亦瞬速飛走，離開這個戰鬥的爆心地。"
+    hk "「氣場讓影像變形了。」"
+    show tent:
+        parallel:
+            linear 5.0 blur 16
+        parallel:
+            linear 0.05 xoffset 5
+            linear 0.05 xoffset -5
+            repeat
+    "像是被高溫燃燒著一般，氣場裏面的物件形狀開始扭曲，無法觀察清楚。"
+    k "「司，能看到數值嗎？」"
+    t "「——！{w}這...難以置信。」"
+    k "「讀出來看看。」"
+    t "「20000...25000......」"
+    t "「『白虎』的力量略勝一籌，但『青龍』的技術高得能過扭轉局勢，\n\ \ \ 應該能打成平手。」"
+    "司握緊拳頭，緊張地說道。"
+    hk "「那... 那有什麼特別？」"
+    t "「我們大賽就是要和這種人對戰呀。」"
+    s "「...哼。」"
+    "身穿白色西裝軍服的男子拿著劍和盾，跟對面身穿黑色皮外套的混混在對峙著。"
+    #hide tent
+    #pause 0.2
+    hide tent
+    with wipe_normal
+    hide speed
+    show igpier_3
+    show igpier_3:
+        alpha 0.0
+    show igpier_3:
+        linear 0.1 alpha 1.0
+    "以驚濤拍岸為信號，兩人在一瞬間消失在空間之中。"
+
+
+
+
+
+
+
     
 
         
